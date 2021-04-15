@@ -1,6 +1,7 @@
 package com.wu.lib_common_ui.recyclerview.base;
 
-import android.support.v4.util.SparseArrayCompat;
+
+import androidx.collection.SparseArrayCompat;
 
 /**
  * @author wuhx

@@ -10,14 +10,14 @@ import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Environment;
 import android.os.IBinder;
-import android.support.v4.app.NotificationCompat;
-
-import android.support.v4.content.LocalBroadcastManager;
 
 import com.wu.lib_update.R;
 
 import com.wu.lib_update.app.UpdateHelper;
 import java.io.File;
+
+import androidx.core.app.NotificationCompat;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import static com.wu.lib_update.app.UpdateHelper.UPDATE_FILE_KEY;
 
@@ -28,7 +28,7 @@ public class UpdateService extends Service {
   /**
    * 服务器固定地址
    */
-  private static final String APK_URL_TITLE = "http://www.imooc.com/mobile/mukewang.apk";
+  private static final String APK_URL_TITLE = "http://www.imooc.com/mobwile/mukewang.apk";
   /**
    * 文件存放路经
    */

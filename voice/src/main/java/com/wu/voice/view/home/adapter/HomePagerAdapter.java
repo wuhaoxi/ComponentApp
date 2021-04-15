@@ -1,14 +1,14 @@
 package com.wu.voice.view.home.adapter;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-
 import com.wu.voice.view.VideoFragment;
 import com.wu.voice.view.discory.DiscoryFragment;
 import com.wu.voice.view.friend.FriendFragment;
 import com.wu.voice.model.CHANNEL;
 import com.wu.voice.view.mine.MineFragment;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 public class HomePagerAdapter extends FragmentPagerAdapter {
 

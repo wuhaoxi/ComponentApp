@@ -7,7 +7,6 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
-import android.support.v4.app.NotificationCompat;
 import android.widget.RemoteViews;
 
 import com.wu.lib_audio.R;
@@ -17,6 +16,8 @@ import com.wu.lib_audio.mediaplayer.core.MusicService;
 import com.wu.lib_audio.mediaplayer.db.GreenDaoHelper;
 import com.wu.lib_audio.mediaplayer.model.AudioBean;
 import com.wu.lib_image_loader.app.ImageLoaderManager;
+
+import androidx.core.app.NotificationCompat;
 
 /**
  * 音乐Notification帮助类

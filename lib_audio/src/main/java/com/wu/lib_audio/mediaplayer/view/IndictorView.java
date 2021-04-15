@@ -2,7 +2,6 @@ package com.wu.lib_audio.mediaplayer.view;
 
 import android.animation.Animator;
 import android.content.Context;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,6 +21,8 @@ import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.ArrayList;
+
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * 音乐播放页面唱针布局
