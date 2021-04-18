@@ -1,6 +1,7 @@
-package com.wu.voice.model.user;
+package com.wu.lib_base.ft_login.model.user;
 
-import com.wu.voice.model.BaseModel;
+
+import com.wu.lib_base.BaseModel;
 
 /**
  * 用户真正实体数据

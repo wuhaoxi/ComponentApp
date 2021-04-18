@@ -6,17 +6,17 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import com.wu.voice.R;
-import com.wu.voice.view.friend.model.FriendBodyValue;
-import com.wu.voice.view.login.LoginActivity;
-import com.wu.voice.utils.UserManager;
+import com.wu.ft_login.manager.UserManager;
 import com.wu.lib_audio.app.AudioHelper;
+import com.wu.lib_base.ft_login.service.impl.LoginImpl;
 import com.wu.lib_common_ui.MultiImageViewLayout;
 import com.wu.lib_common_ui.recyclerview.MultiItemTypeAdapter;
 import com.wu.lib_common_ui.recyclerview.base.ItemViewDelegate;
 import com.wu.lib_common_ui.recyclerview.base.ViewHolder;
 import com.wu.lib_image_loader.app.ImageLoaderManager;
 import com.wu.lib_video.videoplayer.core.VideoAdContext;
+import com.wu.voice.R;
+import com.wu.voice.view.friend.model.FriendBodyValue;
 
 import java.util.List;
 
@@ -72,7 +72,7 @@ public class FriendRecyclerAdapter extends MultiItemTypeAdapter {
                 public void onClick(View v) {
                     if (!UserManager.getInstance().hasLogined()) {
                         //goto login
-                        LoginActivity.start(mContext);
+                        LoginImpl.getInstance().login(mContext);
                     }
                 }
             });
@@ -115,7 +115,7 @@ public class FriendRecyclerAdapter extends MultiItemTypeAdapter {
                 public void onClick(View v) {
                     if (!UserManager.getInstance().hasLogined()) {
                         //goto login
-                        LoginActivity.start(mContext);
+                        LoginImpl.getInstance().login(mContext);
                     }
                 }
             });

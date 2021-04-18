@@ -1,12 +1,12 @@
 package com.wu.voice.model.discory;
 
-import com.wu.voice.model.BaseModel;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * @author wuhaoxuan
  */
-public class RecommandMoreModel extends BaseModel {
+public class RecommandMoreModel implements Serializable {
 
   public ArrayList<RecommandBodyValue> list;
 }

@@ -24,7 +24,8 @@ import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
 /**
- * 播放器底部View
+ * @author wuhaoxuan
+ * @description 播放器底部View
  */
 public class BottomMusicView extends RelativeLayout {
 

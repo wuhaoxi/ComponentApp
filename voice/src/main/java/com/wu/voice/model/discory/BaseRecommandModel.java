@@ -1,11 +1,11 @@
 package com.wu.voice.model.discory;
 
-import com.wu.voice.model.BaseModel;
+import java.io.Serializable;
 
 /**
  * @author wuhaoxuan
  */
-public class BaseRecommandModel extends BaseModel {
+public class BaseRecommandModel implements Serializable {
 
   public String ecode;
   public String emsg;

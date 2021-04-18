@@ -1,14 +1,13 @@
 package com.wu.voice.api;
 
-import com.wu.voice.model.discory.BaseRecommandModel;
-import com.wu.voice.model.discory.BaseRecommandMoreModel;
-import com.wu.voice.model.user.User;
-import com.wu.voice.view.friend.model.BaseFriendModel;
 import com.wu.lib_network.okhttp.CommonOkHttpClient;
 import com.wu.lib_network.okhttp.request.CommonRequest;
 import com.wu.lib_network.okhttp.request.RequestParams;
 import com.wu.lib_network.okhttp.response.listener.DisposeDataHandle;
 import com.wu.lib_network.okhttp.response.listener.DisposeDataListener;
+import com.wu.voice.model.discory.BaseRecommandModel;
+import com.wu.voice.model.discory.BaseRecommandMoreModel;
+import com.wu.voice.view.friend.model.BaseFriendModel;
 /**
  * 请求中心
  */
@@ -27,10 +26,6 @@ public class RequestCenter {
 
         private static String HOME_FRIEND = ROOT_URL + "/module_voice/home_friend";
 
-        /**
-         * 登陆接口
-         */
-        public static String LOGIN = ROOT_URL + "/module_voice/login_phone";
     }
 
     //根据参数发送所有post请求
@@ -54,14 +49,4 @@ public class RequestCenter {
         RequestCenter.getRequest(HttpConstants.HOME_FRIEND, null, listener, BaseFriendModel.class);
     }
 
-    /**
-     * 用户登陆请求
-     */
-    public static void login(DisposeDataListener listener) {
-
-        RequestParams params = new RequestParams();
-        params.put("mb", "18734924592");
-        params.put("pwd", "999999q");
-        RequestCenter.getRequest(HttpConstants.LOGIN, params, listener, User.class);
-    }
 }

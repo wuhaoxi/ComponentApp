@@ -7,30 +7,26 @@ import android.content.IntentFilter;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.localbroadcastmanager.content.LocalBroadcastManager;
-import androidx.viewpager.widget.ViewPager;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.wu.voice.R;
-import com.wu.voice.model.login.LoginEvent;
-import com.wu.voice.utils.Utils;
-import com.wu.voice.view.home.adapter.HomePagerAdapter;
-import com.wu.voice.model.CHANNEL;
-import com.wu.voice.view.login.LoginActivity;
-import com.wu.voice.utils.UserManager;
+import com.wu.ft_login.manager.UserManager;
 import com.wu.lib_audio.app.AudioHelper;
 import com.wu.lib_audio.mediaplayer.model.AudioBean;
+import com.wu.lib_base.ft_login.model.LoginEvent;
+import com.wu.lib_base.ft_login.service.impl.LoginImpl;
 import com.wu.lib_common_ui.base.BaseActivity;
 import com.wu.lib_common_ui.base.constant.Constant;
 import com.wu.lib_common_ui.pager_indictor.ScaleTransitionPagerTitleView;
 import com.wu.lib_image_loader.app.ImageLoaderManager;
 import com.wu.lib_update.app.UpdateHelper;
+import com.wu.voice.R;
+import com.wu.voice.model.CHANNEL;
+import com.wu.voice.utils.Utils;
+import com.wu.voice.view.home.adapter.HomePagerAdapter;
 
 import net.lucode.hackware.magicindicator.MagicIndicator;
 import net.lucode.hackware.magicindicator.ViewPagerHelper;
@@ -45,6 +41,10 @@ import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.ArrayList;
+
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+import androidx.viewpager.widget.ViewPager;
 
 public class HomeActivity extends BaseActivity implements View.OnClickListener {
 
@@ -236,7 +236,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.unloggin_layout:
                 if (!UserManager.getInstance().hasLogined()) {
-                    LoginActivity.start(this);
+                    LoginImpl.getInstance().login(HomeActivity.this);
                 } else {
                     mDrawerLayout.closeDrawer(Gravity.LEFT);
                 }

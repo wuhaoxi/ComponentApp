@@ -1,11 +1,11 @@
 package com.wu.voice.model.discory;
 
-import com.wu.voice.model.BaseModel;
+import java.io.Serializable;
 
 /**
  * @author wuhaoxuan
  */
-public class RecommandMiddleValue extends BaseModel {
+public class RecommandMiddleValue implements Serializable {
 
   public String info;
   public String imageUrl;

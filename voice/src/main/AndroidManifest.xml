@@ -29,9 +29,6 @@
             android:screenOrientation="portrait">
 
         </activity>
-        <activity
-            android:name="com.wu.voice.view.login.LoginActivity"
-            android:screenOrientation="portrait" />
 
         <!--文件共享-->
         <provider

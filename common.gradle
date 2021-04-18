@@ -1,6 +1,7 @@
 ext {
     android = [
             applicationId    : 'com.wu.voice',
+            buildToolsVersion: "29.0.0",
             compileSdkVersion: 29,
             minSdkVersion    : 19,
             targetSdkVersion : 29,
@@ -24,6 +25,7 @@ ext {
             greendao      : '3.2.2',
             arouterapi    : '1.5.0',
             aroutercompiler : '1.2.2',
+            gson           : '2.8.0',
     ]
 
     depsLibs = [
@@ -48,5 +50,6 @@ ext {
             constraint    : "com.android.support.constraint:constraint-layout:${depsVersion.constraint}",
             arouterapi     : "com.alibaba:arouter-api:${depsVersion.arouterapi}",
             aroutercompiler: "com.alibaba:arouter-compiler:${depsVersion.aroutercompiler}",
+            gson           : "com.google.code.gson:gson:${depsVersion.gson}",
     ]
 }
