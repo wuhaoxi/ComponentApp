@@ -1,4 +1,4 @@
-package com.wu.lib_audio.mediaplayer.view;
+package com.wu.ft_audio.mediaplayer.view;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -14,12 +14,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
-import com.wu.lib_audio.R;
-import com.wu.lib_audio.mediaplayer.core.AudioController;
-import com.wu.lib_audio.mediaplayer.event.AudioLoadEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioPlayModeEvent;
-import com.wu.lib_audio.mediaplayer.model.AudioBean;
-import com.wu.lib_audio.mediaplayer.view.adapter.MusicListAdapter;
+import com.wu.ft_audio.R;
+import com.wu.ft_audio.mediaplayer.core.AudioController;
+import com.wu.ft_audio.mediaplayer.event.AudioLoadEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioPlayModeEvent;
+import com.wu.ft_audio.mediaplayer.model.AudioBean;
+import com.wu.ft_audio.mediaplayer.view.adapter.MusicListAdapter;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -27,9 +27,9 @@ import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.ArrayList;
 
-import static com.wu.lib_audio.mediaplayer.core.AudioController.PlayMode.LOOP;
-import static com.wu.lib_audio.mediaplayer.core.AudioController.PlayMode.RANDOM;
-import static com.wu.lib_audio.mediaplayer.core.AudioController.PlayMode.REPEAT;
+import static com.wu.ft_audio.mediaplayer.core.AudioController.PlayMode.LOOP;
+import static com.wu.ft_audio.mediaplayer.core.AudioController.PlayMode.RANDOM;
+import static com.wu.ft_audio.mediaplayer.core.AudioController.PlayMode.REPEAT;
 
 public class MusicListDialog extends BottomSheetDialog {
 

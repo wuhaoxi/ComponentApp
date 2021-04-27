@@ -1,4 +1,4 @@
-package com.wu.lib_audio.mediaplayer.event;
+package com.wu.ft_audio.mediaplayer.event;
 
 public class AudioStartEvent {
 }

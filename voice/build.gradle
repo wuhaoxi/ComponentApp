@@ -44,6 +44,8 @@ dependencies {
 
     implementation this.rootProject.depsLibs.appcompat
     //android design库
+    implementation rootProject.depsLibs.design
+    //recyclerview
     implementation this.rootProject.depsLibs.recyclerview
     //rxjava
     implementation rootProject.depsLibs.rxjava
@@ -66,7 +68,7 @@ dependencies {
     //图片加载库
     implementation project(':lib_image_loader')
     //音频播放库
-    implementation project(':lib_audio')
+    implementation project(':ft_audio')
     //webview库
     implementation project(':lib_webview')
     //分享库
@@ -83,5 +85,9 @@ dependencies {
     implementation project(':lib_update')
     //登录模块
     implementation project(':ft_login')
+    //登录模块
+    implementation project(':ft_home')
+    //loading模块
+    implementation project(':ft_loading')
 
 }

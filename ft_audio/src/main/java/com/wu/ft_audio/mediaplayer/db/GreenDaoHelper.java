@@ -1,10 +1,13 @@
-package com.wu.lib_audio.mediaplayer.db;
+package com.wu.ft_audio.mediaplayer.db;
 
 import android.database.sqlite.SQLiteDatabase;
 
-import com.wu.lib_audio.app.AudioHelper;
-import com.wu.lib_audio.mediaplayer.model.AudioBean;
-import com.wu.lib_audio.mediaplayer.model.Favourite;
+import com.wu.ft_audio.app.AudioHelper;
+import com.wu.ft_audio.mediaplayer.model.AudioBean;
+import com.wu.ft_audio.mediaplayer.model.Favourite;
+import com.wu.lib_audio.mediaplayer.db.DaoMaster;
+import com.wu.lib_audio.mediaplayer.db.DaoSession;
+import com.wu.lib_audio.mediaplayer.db.FavouriteDao;
 
 /**
  * 操作greenDao数据库帮助类

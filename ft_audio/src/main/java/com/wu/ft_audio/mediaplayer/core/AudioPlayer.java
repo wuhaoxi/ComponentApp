@@ -1,4 +1,4 @@
-package com.wu.lib_audio.mediaplayer.core;
+package com.wu.ft_audio.mediaplayer.core;
 
 import android.content.Context;
 import android.media.AudioManager;
@@ -10,15 +10,15 @@ import android.os.Message;
 import android.os.PowerManager;
 import android.util.Log;
 
-import com.wu.lib_audio.app.AudioHelper;
-import com.wu.lib_audio.mediaplayer.event.AudioCompleteEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioErrorEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioLoadEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioPauseEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioProgressEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioReleaseEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioStartEvent;
-import com.wu.lib_audio.mediaplayer.model.AudioBean;
+import com.wu.ft_audio.app.AudioHelper;
+import com.wu.ft_audio.mediaplayer.event.AudioCompleteEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioErrorEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioLoadEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioPauseEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioProgressEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioReleaseEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioStartEvent;
+import com.wu.ft_audio.mediaplayer.model.AudioBean;
 
 import org.greenrobot.eventbus.EventBus;
 

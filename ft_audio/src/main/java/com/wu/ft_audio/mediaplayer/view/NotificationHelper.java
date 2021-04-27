@@ -1,4 +1,4 @@
-package com.wu.lib_audio.mediaplayer.view;
+package com.wu.ft_audio.mediaplayer.view;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -9,12 +9,12 @@ import android.content.Intent;
 import android.os.Build;
 import android.widget.RemoteViews;
 
-import com.wu.lib_audio.R;
-import com.wu.lib_audio.app.AudioHelper;
-import com.wu.lib_audio.mediaplayer.core.AudioController;
-import com.wu.lib_audio.mediaplayer.core.MusicService;
-import com.wu.lib_audio.mediaplayer.db.GreenDaoHelper;
-import com.wu.lib_audio.mediaplayer.model.AudioBean;
+import com.wu.ft_audio.R;
+import com.wu.ft_audio.app.AudioHelper;
+import com.wu.ft_audio.mediaplayer.core.AudioController;
+import com.wu.ft_audio.mediaplayer.core.MusicService;
+import com.wu.ft_audio.mediaplayer.db.GreenDaoHelper;
+import com.wu.ft_audio.mediaplayer.model.AudioBean;
 import com.wu.lib_image_loader.app.ImageLoaderManager;
 
 import androidx.core.app.NotificationCompat;

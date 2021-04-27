@@ -1,4 +1,4 @@
-package com.wu.lib_audio.mediaplayer.core;
+package com.wu.ft_audio.mediaplayer.core;
 
 import android.media.MediaPlayer;
 

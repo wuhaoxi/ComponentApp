@@ -1,4 +1,4 @@
-package com.wu.lib_audio.mediaplayer.view.adapter;
+package com.wu.ft_audio.mediaplayer.view.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -11,9 +11,9 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.wu.lib_audio.R;
-import com.wu.lib_audio.mediaplayer.core.AudioController;
-import com.wu.lib_audio.mediaplayer.model.AudioBean;
+import com.wu.ft_audio.R;
+import com.wu.ft_audio.mediaplayer.core.AudioController;
+import com.wu.ft_audio.mediaplayer.model.AudioBean;
 
 import java.util.ArrayList;
 

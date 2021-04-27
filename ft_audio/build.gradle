@@ -45,10 +45,9 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     //占位主工程android原生库
     compileOnly rootProject.depsLibs.appcompat
-    implementation rootProject.depsLibs.design
+    compileOnly rootProject.depsLibs.design
     compileOnly rootProject.depsLibs.recyclerview
 
     //占位主工程的greenDao类库

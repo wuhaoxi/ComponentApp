@@ -1,4 +1,4 @@
-package com.wu.lib_audio.mediaplayer.view;
+package com.wu.ft_audio.mediaplayer.view;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
@@ -15,18 +15,18 @@ import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.wu.lib_audio.R;
-import com.wu.lib_audio.mediaplayer.core.AudioController;
-import com.wu.lib_audio.mediaplayer.core.CustomMediaPlayer;
-import com.wu.lib_audio.mediaplayer.db.GreenDaoHelper;
-import com.wu.lib_audio.mediaplayer.event.AudioFavouriteEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioLoadEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioPauseEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioPlayModeEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioProgressEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioStartEvent;
-import com.wu.lib_audio.mediaplayer.model.AudioBean;
-import com.wu.lib_audio.mediaplayer.utils.Utils;
+import com.wu.ft_audio.R;
+import com.wu.ft_audio.mediaplayer.core.AudioController;
+import com.wu.ft_audio.mediaplayer.core.CustomMediaPlayer;
+import com.wu.ft_audio.mediaplayer.db.GreenDaoHelper;
+import com.wu.ft_audio.mediaplayer.event.AudioFavouriteEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioLoadEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioPauseEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioPlayModeEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioProgressEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioStartEvent;
+import com.wu.ft_audio.mediaplayer.model.AudioBean;
+import com.wu.ft_audio.mediaplayer.utils.Utils;
 import com.wu.lib_common_ui.base.BaseActivity;
 import com.wu.lib_image_loader.app.ImageLoaderManager;
 import com.wu.lib_share.share.ShareDialog;

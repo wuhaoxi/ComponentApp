@@ -1,4 +1,4 @@
-package com.wu.lib_audio.exception;
+package com.wu.ft_audio.exception;
 
 /**
  * 播放队列为空异常

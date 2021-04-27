@@ -7,7 +7,8 @@ import android.widget.RelativeLayout;
 
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.wu.lib_base.service.audio.AudioService;
+import com.wu.lib_base.ft_audio.service.AudioService;
+import com.wu.lib_base.ft_audio.service.impl.AudioImpl;
 import com.wu.lib_video.videoplayer.core.view.CustomVideoView;
 import com.wu.lib_video.videoplayer.core.view.VideoFullDialog;
 import com.wu.lib_video.videoplayer.utils.Utils;
@@ -25,8 +26,6 @@ public class VideoAdSlot implements CustomVideoView.ADVideoPlayerListener {
     /**
      * data
      */
-    @Autowired(name = "/audio/audio_service")
-    protected AudioService mAudioService;
     private String mXAdInstance;
     private SDKSlotListener mSlotListener;
 
@@ -90,7 +89,7 @@ public class VideoAdSlot implements CustomVideoView.ADVideoPlayerListener {
         dialog.setViewBundle(bundle); //为Dialog设置播放器数据Bundle对象
         dialog.setSlotListener(mSlotListener);
         dialog.show();
-        mAudioService.pauseAudio();
+        AudioImpl.getInstance().pauseAudio();
     }
 
     private void backToSmallMode(int position) {
@@ -103,7 +102,7 @@ public class VideoAdSlot implements CustomVideoView.ADVideoPlayerListener {
         mVideoView.setListener(this);
         mVideoView.seekAndResume(position);
         //恢复音乐
-        mAudioService.resumeAudio();
+        AudioImpl.getInstance().resumeAudio();
     }
 
     private void bigPlayComplete() {

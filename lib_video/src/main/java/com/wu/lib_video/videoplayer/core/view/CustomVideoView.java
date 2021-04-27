@@ -119,7 +119,7 @@ public class CustomVideoView extends RelativeLayout
 
     private void showPauseView(boolean show) {
         mFullBtn.setVisibility(show ? VISIBLE : GONE);
-        mMiniPlayBtn.setVisibility(show ? VISIBLE : GONE);
+        mMiniPlayBtn.setVisibility(show ? GONE : VISIBLE);
         mLoadingBar.clearAnimation();
         mLoadingBar.setVisibility(GONE);
     }

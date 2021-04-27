@@ -1,6 +1,6 @@
-package com.wu.lib_audio.mediaplayer.event;
+package com.wu.ft_audio.mediaplayer.event;
 
-import com.wu.lib_audio.mediaplayer.core.CustomMediaPlayer;
+import com.wu.ft_audio.mediaplayer.core.CustomMediaPlayer;
 
 public class AudioProgressEvent {
 

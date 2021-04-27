@@ -1,4 +1,4 @@
-package com.wu.lib_audio.mediaplayer.view;
+package com.wu.ft_audio.mediaplayer.view;
 
 import android.animation.ObjectAnimator;
 import android.app.Activity;
@@ -11,12 +11,12 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.wu.lib_audio.R;
-import com.wu.lib_audio.mediaplayer.core.AudioController;
-import com.wu.lib_audio.mediaplayer.event.AudioLoadEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioPauseEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioStartEvent;
-import com.wu.lib_audio.mediaplayer.model.AudioBean;
+import com.wu.ft_audio.R;
+import com.wu.ft_audio.mediaplayer.core.AudioController;
+import com.wu.ft_audio.mediaplayer.event.AudioLoadEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioPauseEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioStartEvent;
+import com.wu.ft_audio.mediaplayer.model.AudioBean;
 import com.wu.lib_image_loader.app.ImageLoaderManager;
 
 import org.greenrobot.eventbus.EventBus;

@@ -1,4 +1,4 @@
-package com.wu.lib_audio.mediaplayer.model;
+package com.wu.ft_audio.mediaplayer.model;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;

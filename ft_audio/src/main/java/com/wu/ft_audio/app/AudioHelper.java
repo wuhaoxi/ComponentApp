@@ -1,13 +1,15 @@
-package com.wu.lib_audio.app;
+package com.wu.ft_audio.app;
 
 import android.app.Activity;
 import android.content.Context;
 
-import com.wu.lib_audio.mediaplayer.core.AudioController;
-import com.wu.lib_audio.mediaplayer.core.MusicService;
-import com.wu.lib_audio.mediaplayer.db.GreenDaoHelper;
-import com.wu.lib_audio.mediaplayer.model.AudioBean;
-import com.wu.lib_audio.mediaplayer.view.MusicPlayerActivity;
+import com.wu.ft_audio.mediaplayer.core.AudioController;
+import com.wu.ft_audio.mediaplayer.core.MusicService;
+import com.wu.ft_audio.mediaplayer.db.GreenDaoHelper;
+import com.wu.ft_audio.mediaplayer.model.AudioBean;
+import com.wu.ft_audio.mediaplayer.utils.Utils;
+import com.wu.ft_audio.mediaplayer.view.MusicPlayerActivity;
+import com.wu.lib_base.ft_audio.model.CommonAudioBean;
 
 import java.util.ArrayList;
 
@@ -29,12 +31,12 @@ public final class AudioHelper {
     }
 
     //外部启动MusicService方法
-    public static void startMusicService(ArrayList<AudioBean> audios) {
-        MusicService.startMusicService(audios);
+    public static void startMusicService(ArrayList<CommonAudioBean> audioBeans) {
+        MusicService.startMusicService(Utils.convertFrom(audioBeans));
     }
 
-    public static void addAudio(Activity activity, AudioBean bean) {
-        AudioController.getInstance().addAudio(bean);
+    public static void addAudio(Activity activity, CommonAudioBean audioBean) {
+        AudioController.getInstance().addAudio(Utils.convertFrom(audioBean));
         MusicPlayerActivity.start(activity);
     }
 

@@ -1,4 +1,4 @@
-package com.wu.lib_audio.mediaplayer.core;
+package com.wu.ft_audio.mediaplayer.core;
 
 import android.app.Service;
 import android.content.BroadcastReceiver;
@@ -9,13 +9,13 @@ import android.os.IBinder;
 import androidx.annotation.Nullable;
 import android.text.TextUtils;
 
-import com.wu.lib_audio.app.AudioHelper;
-import com.wu.lib_audio.mediaplayer.event.AudioFavouriteEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioLoadEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioPauseEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioStartEvent;
-import com.wu.lib_audio.mediaplayer.model.AudioBean;
-import com.wu.lib_audio.mediaplayer.view.NotificationHelper;
+import com.wu.ft_audio.app.AudioHelper;
+import com.wu.ft_audio.mediaplayer.event.AudioFavouriteEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioLoadEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioPauseEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioStartEvent;
+import com.wu.ft_audio.mediaplayer.model.AudioBean;
+import com.wu.ft_audio.mediaplayer.view.NotificationHelper;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

@@ -1,12 +1,12 @@
-package com.wu.lib_audio.mediaplayer.core;
+package com.wu.ft_audio.mediaplayer.core;
 
-import com.wu.lib_audio.exception.AudioQueueEmptyException;
-import com.wu.lib_audio.mediaplayer.db.GreenDaoHelper;
-import com.wu.lib_audio.mediaplayer.event.AudioCompleteEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioErrorEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioFavouriteEvent;
-import com.wu.lib_audio.mediaplayer.event.AudioPlayModeEvent;
-import com.wu.lib_audio.mediaplayer.model.AudioBean;
+import com.wu.ft_audio.exception.AudioQueueEmptyException;
+import com.wu.ft_audio.mediaplayer.db.GreenDaoHelper;
+import com.wu.ft_audio.mediaplayer.event.AudioCompleteEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioErrorEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioFavouriteEvent;
+import com.wu.ft_audio.mediaplayer.event.AudioPlayModeEvent;
+import com.wu.ft_audio.mediaplayer.model.AudioBean;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
