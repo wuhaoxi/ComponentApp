@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.alibaba.arouter'
 
 android {
     compileSdkVersion this.rootProject.android.compileSdkVersion
@@ -33,11 +32,6 @@ dependencies {
     compileOnly this.rootProject.depsLibs.appcompat
     compileOnly this.rootProject.depsLibs.recyclerview
     compileOnly this.rootProject.depsLibs.design
-    compileOnly this.rootProject.depsLibs.constraint
-    //eventbus类库依赖
-    compileOnly rootProject.depsLibs.eventbus
-    //gson解析库
-    compileOnly rootProject.depsLibs.gson
     //arouter库
     compileOnly(rootProject.depsLibs.arouterapi) {
         exclude group: 'com.android.support'
@@ -45,18 +39,12 @@ dependencies {
     annotationProcessor rootProject.depsLibs.aroutercompiler
     //业务基础库
     compileOnly project(':lib_base')
-    //app下载更新库
-    compileOnly project(':lib_update')
-    //网络请求库
-    compileOnly project(':lib_network')
     //基础UI库
     compileOnly project(':lib_common_ui')
+    //网络请求库
+    compileOnly project(':lib_network')
     //图片加载库
     compileOnly project(':lib_image_loader')
-    //发现模块
-    compileOnly project(':ft_discory')
-    //朋友模块
-    compileOnly project(':ft_friend')
-    //个人模块
-    compileOnly project(':ft_mine')
+    //视频播放器组件
+    compileOnly project(':lib_video')
 }

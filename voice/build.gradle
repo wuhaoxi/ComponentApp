@@ -89,5 +89,11 @@ dependencies {
     implementation project(':ft_home')
     //loading模块
     implementation project(':ft_loading')
+    //发现模块
+    implementation project(':ft_discory')
+    //朋友模块
+    implementation project(':ft_friend')
+    //个人模块
+    implementation project(':ft_mine')
 
 }

@@ -1,10 +1,10 @@
 package com.wu.ft_home.view.home.adapter;
 
 
+import com.wu.ft_discory.view.discory.DiscoryFragment;
+import com.wu.ft_friend.view.friend.FriendFragment;
 import com.wu.ft_home.model.CHANNEL;
-import com.wu.ft_home.view.discory.DiscoryFragment;
-import com.wu.ft_home.view.friend.FriendFragment;
-import com.wu.ft_home.view.mine.MineFragment;
+import com.wu.ft_mine.view.mine.MineFragment;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
